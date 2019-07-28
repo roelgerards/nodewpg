@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Learing CSS</title>
+
+    <style>
+
+        .container {
+            background-color: #eee;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            border: 1px solid gray;
+        }
+
+        .container div {
+            position: relative;
+            width: 200px; height: 200px;
+            background-color: red;
+            font-size: 72px;
+            text-align: center;
+            line-height: 200px;
+            box-shadow: 0 2px 1px #777;
+            text-shadow: 0 2px 1px #777;
+        }
+
+        .container div:hover {
+            border-radius: 10px;
+            background-color: #ddd;
+        }
+
+        .container div:first-of-type {
+            margin-top: 0px;
+            margin-left: 60px;
+        }
+        .container div:last-of-type {
+            margin-top: 0px;
+            margin-left:260px;
+        }
+
+        /*
+            Changing the top & left values results that the respective div-elements change their position;
+            With 0 and 0 values the div-elements arrange themself as how block-elements normally would do;
+            With negative values: the div-elements (partially) move out of the viewport;
+        */
+
+
+    </style>
+
+    </head>
+    <body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+    </div>
+    </body>
+</html>
