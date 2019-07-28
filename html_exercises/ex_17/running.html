@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running - Personal Site</title>
+</head>
+
+ <style>
+        .distance {
+            text-align: center;
+        }
+
+        ul {
+
+            display: inline-block;
+            text-align: left;
+
+        }
+    </style>
+    
+<body style="font-family: Arial">
+
+<header>
+    <h1 align="center">Welcome to my personal site !</h1>
+</header>
+
+
+    <nav>
+            <hr>
+            <table cellspacing="0" border="1" cellpadding="10" bordercolor=white align="center">
+    
+                <thead bgcolor="#daf8e3">
+                    <tr>
+                        <th><a href="index.html">Index</a></th>
+                        <th><a href="belgium.html">Belgium</a></th>
+                        <th><a href="football.html">Football</a></th>
+                        <th><a href="running.html">Running</a></th>
+                        <th><a href="writing.html">Writing</a></th>
+                        <th><a href="about_me.html">About me</a></th>
+                    </tr>
+    
+                </thead>
+            </table>
+            <hr>
+    
+        </nav>
+
+    <!--I implemented a bit of css-code to center-align the bullets along with the list-items. 
+        All of this because no html attribute let me centre the bullets of a list-->
+
+   
+
+    <section class="distance">
+
+        <p>
+
+            I like to run, some of the prefered distance I like to run are:
+            <ul>
+                <li>5km</li>
+                <li>7km</li>
+                <li>8km</li>
+                <li>10km</li>
+            </ul>
+
+        </p>
+
+        <p>
+
+            I also have a profile on <a href="https://www.strava.com/athletes/41062300" target="_blank">Strava</a>.
+
+        </p>
+
+    </section>
+
+    <section>
+
+        <div>
+            In case you want to share your running experience or you have any other questions ? Feel free to contact me
+            !
+
+
+
+            <form action="running.html" method="get" enctype="application/x-www-form-urlencoded"
+                style="margin-top: 20px">
+                E-mail address :
+
+                <input type="email" name="emailaddress" placeholder="email" size="30" required
+                    title="Input an valid E-mail please" style="margin-right:25px;margin-bottom: 20px">
+
+
+                Name :
+                <input type="text" name="name" placeholder="name" size="30" required
+                    title="Input an valid E-mail please" style="margin-right:25px;margin-bottom: 20px">
+
+                <label for="commentid" style="display: block">Comment : </label>
+                <textarea name="bio" id="bio" cols="75" rows="15" style="display: block" id="commentid ;margin: 20px"
+                    required></textarea>
+
+                <input type="submit" value="submit" name="submit"
+                    style="display: block; margin-top: 40px; margin-right: auto; ;margin: 20px">
+
+
+
+
+
+            </form>
+        </div>
+
+
+
+    </section>
+
+    <footer style="position: relative; bottom:10px;">&copy;Roel Gerards</footer>
+
+</body>

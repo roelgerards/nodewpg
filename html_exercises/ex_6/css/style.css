@@ -1,0 +1,18 @@
+
+
+body {
+
+counter-reset: section;
+
+}
+
+p::before {
+    counter-increment: section;
+    content: "P. "  counter(section)": ";
+}
+
+
+
+/*
+* With https://www.google.com/search?q=css+counter, I tried making a counter in order to number all the paragraphs without(!) the use of an ordered list in html. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
+* UPDATE: as you can see I succeded numbering all paragraphs without the use of a ordered list tag. The error happened to be a style-tag I accedentaly left in the ccs-file.

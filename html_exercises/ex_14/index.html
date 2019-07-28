@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Create User</title>
+</head>
+
+<style>
+    div {
+
+        margin: 10px;
+
+
+    }
+</style>
+
+<body>
+
+
+    <h1>Create User</h1>
+
+    <hr>
+
+    <div>
+        <form action="create_user.html" method="GET" enctype="application/x-www-form-urlencoded" style="margin:30px" ;>
+            <fieldset>
+                <legend>User Form</legend>
+                <div>
+                    Sign-in :
+                    <input type="text" name="username" placeholder="username" size="30" maxlength="12" style="margin-right:25px">
+                    Password : 
+                    <input type="password" name="password" size="30" maxlength="8" placeholder="password">
+                </div>
+
+
+
+                <div><label for="birthdayid">Birthday : </label><input type="date" name="birthday" id="birthdayid"></div>
+                <div><label for="emailid">Email : </label> <input type="email" name="email" id="emailid"></div>
+                <div><label for="urlid">Your site-URL : </label><input type="url" name="site-url" id="urlid"></div>
+
+
+
+                <div>
+
+                     <label>Favourite superhero :</label> 
+                    <input type="radio" name="superheroes" value="Superman"> Superman
+                    <input type="radio" name="superheroes" value="Batman" checked> Batman
+                    <input type="radio" name="superheroes" value="Wonder Woman"> Wonder Woman
+                    <input type="radio" name="superheroes" value="Flash"> Flash
+                    <input type="radio" name="superheroes" value="Thor"> Thor
+                    <input type="radio" name="superheroes" value="Hulk"> Hulk
+                </div>
+
+                <div>
+
+                    <label>Favourite videogame :</label> 
+                    <input type="checkbox" name="videogames" value="FIFA" checked="checked"> FIFA
+                    <input type="checkbox" name="videogames" value="NHL"> NHL
+                    <input type="checkbox" name="videogames" value="Resident Evil"> Resident Evil
+                    <input type="checkbox" name="videogames" value="Uncharted" checked> Uncharted
+                </div>
+
+                <div>
+                    <input type="hidden" name="userid" value="2300">
+                </div>
+
+                <div>
+                    <input type="image" value="submit" src="img/register_button.png" alt="submit" width="80px" style="display: block; margin-left: auto; margin-right: auto;">
+                </div>
+
+
+            </fieldset>
+        </form>
+
+
+
+        <form action="https://www.google.ca/search?q=" method="get" target="_blank" style="margin:30px" ;>
+            <fieldset>
+                <legend>Google-search</legend>
+                <div>
+                    <label for="searchid">Search : </label>
+                    <input type="search" name="q" id="searchid">
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

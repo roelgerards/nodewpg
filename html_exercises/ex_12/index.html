@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Create User</title>
+</head>
+
+<style>
+    div {
+        margin: 10px;
+    }
+</style>
+
+<body>
+
+
+    <h1>Create User</h1>
+
+    <hr>
+
+    <form action="create_user.html" method="GET" enctype="application/x-www-form-urlencoded" style="margin:30px" ;>
+        <fieldset>
+            <legend>User Form</legend>
+            <div>
+
+                <label for="signinid">Sign-in : </label><input type="text" name="username" placeholder="username" size="30"
+                    maxlength="12" style="margin-right: 20px" id="signinid">
+
+                <label for="passid">Password :</label> <input type="password" name="password"  size="30" maxlength="8"
+                     id="passid">
+            </div>
+
+            <div>
+
+                <label>Favourite superhero : </label>
+                <input type="radio" name="superheroes" value="Superman"> Superman
+                <input type="radio" name="superheroes" value="Batman" checked> Batman
+                <input type="radio" name="superheroes" value="Wonder Woman"> Wonder Woman
+                <input type="radio" name="superheroes" value="Flash"> Flash
+                <input type="radio" name="superheroes" value="Thor"> Thor
+                <input type="radio" name="superheroes" value="Hulk"> Hulk
+            </div>
+
+            <div>
+
+                <label>Favourite videogame : </label>
+                <input type="checkbox" name="videogames" value="FIFA" checked> FIFA
+                <input type="checkbox" name="videogames" value="NHL"> NHL
+                <input type="checkbox" name="videogames" value="Resident Evil"> Resident Evil
+                <input type="checkbox" name="videogames" value="Uncharted" checked> Uncharted
+            </div>
+
+            <div>
+                <input type="hidden" name="userid" value="2300">
+            </div>
+
+            <div>
+                <input type="image" value="submit" src="img/register_button.png" alt="submit" width="80px"
+                    style="padding: 10px 10px; display: block; margin-left: 300px; margin-right: auto;">
+            </div>
+
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>

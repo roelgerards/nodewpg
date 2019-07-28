@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+</head>
+
+<style>
+    poll {
+
+        margin: 10px;
+        padding: 10px;
+
+    }
+
+    section {
+
+        margin-left: 50px;
+        margin-bottom: 70px
+    }
+</style>
+
+<body style="font-family: Arial">
+
+    <header>
+        <h1>Welcome to my personal site !</h1>
+    </header>
+
+
+    <nav>
+        <hr>
+        <table cellspacing="0" border="1" cellpadding="10" bordercolor=white align="center">
+
+            <thead bgcolor="#daf8e3">
+                <tr>
+                    <th><a href="index.html">Index</a></th>
+                    <th><a href="belgium.html">Belgium</a></th>
+                    <th><a href="football.html">Football</a></th>
+                    <th><a href="running.html">Running</a></th>
+                    <th><a href="writing.html">Writing</a></th>
+                    <th><a href="about_me.html">About me</a></th>
+                </tr>
+
+            </thead>
+        </table>
+        <hr>
+
+    </nav>
+
+
+
+    <section id=person2006>
+
+        <h1>About me</h1>
+        <p>
+
+            My name is Roel Gerards &AMP; I am 2006 Time Magazine's person of the year as shown below.
+            <a href="https://en.wikipedia.org/wiki/You_(Time_Person_of_the_Year)">
+                <figure><img src="assests/img/Time_2006.jpg" alt="Time Magazine 2006">
+                    <figcaption>Time's Magazine Person of the Year 2006</figcaption>
+                </figure>
+            </a>
+
+        </p>
+    </section>
+
+    <section>
+
+        A nice video (no audio):
+
+        <video src="assests/vid/OneeRoel - Parallax.mp4" controls width="80%"
+            style="margin-bottom: 30px;display: block"></video>
+
+
+
+
+        A nice audio-clip:
+
+        <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls
+            style="display: block"></audio>
+
+
+    </section>
+
+    <section id="poll">
+        <form action="about_me.html" method="GET" enctype="application/x-www-form-urlencoded"
+            style="width: 75%; border-spacing: 20px">
+            <fieldset>
+                <legend>Poll:</legend>
+
+                Me and and my spouse like to travel. <br>
+                It's always nice to experience other cultures, don't you think ?
+                How many countries have you visited so far ?
+
+                <div id="poll" style="margin-top: 15px; margin-bottom: 15px;">
+                    <div><input type="radio" name="#countries" value="1-5"> 1-5</div>
+                    <div><input type="radio" name="#countries" value="6-10" checked> 6-10</div>
+                    <div><input type="radio" name="#countries" value="10-15"> 10-15</div>
+                    <div><input type="radio" name="#countries" value="16-20"> 16-20</div>
+                    <div><input type="radio" name="#countries" value="20+"> 20+</div>
+                    <input type="submit" value="Vote" name="vote"
+                        style="display: block; margin-top: 40px; margin-right: auto;">
+
+                    </select>
+
+                </div>
+
+            </fieldset>
+        </form>
+
+
+    </section>
+
+
+
+    <footer style="position: relative; bottom:10px;">&copy;Roel Gerards</footer>
+
+</body>
+
+</html>
