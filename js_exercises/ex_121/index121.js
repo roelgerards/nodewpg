@@ -1,4 +1,4 @@
-const games = 
+var games = 
 [
   'Grand Theft Auto V',
   'The Last of Us Remastered',
@@ -11,8 +11,8 @@ const games =
   'Diablo III'
 ];
 
-  games[0] = 'FIFA 18',
-  games[3] = 'FIFA 17',
+  games[0] = 'FIFA 18';
+  games[3] = 'FIFA 17';
   games[2] = 'FIFA 16';
 
   console.log(games);
