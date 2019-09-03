@@ -9,3 +9,5 @@ This project it's to learn HTML, CSS, JS, Node.js and MongoDB
 2. [CSS  exercises](css_exercises)
 
 3. [Javascript  exercises](js_exercises)
+
+4. [Browser_api exercises](browser_api_exercises)
