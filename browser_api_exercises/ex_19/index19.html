@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Setting attributes</title>
+    <style>
+        .bold {
+            font-weight: bold;
+        }
+
+        .striked {
+            text-decoration: line-through;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+            let element = document.querySelector('div');
+            let title = document.querySelector('h1');
+
+            let statusElement = element.hasAttributes();
+            let statusTitle = title.hasAttributes();
+
+
+
+             if (statusElement) {
+                 element.classList.add('striked');
+             } else {
+                 element.classList.add('bold')
+             }
+
+             if (statusTitle) {
+                 title.classList.add('striked');
+             } else {
+                 title.classList.add('bold')
+             }
+
+            console.log(statusElement);
+            console.log(statusTitle);
+
+        };
+    </script>
+
+</head>
+
+<body>
+    <h1 id="main">Playing with attributes</h1>
+    <div name="divy">We have more control over our documents as we learn about JavaScript and DOM elements!!!</div>
+</body>
+
+</html>

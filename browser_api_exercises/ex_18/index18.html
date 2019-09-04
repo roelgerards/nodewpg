@@ -29,11 +29,11 @@
             color: green;
         }
 
-        a.azul {
+        a.blue {
             color: blue;
         }
 
-        a.rojo {
+        a.red {
             color: red;
         }
     </style>
@@ -41,15 +41,17 @@
     <script>
         window.onload = function () {
             const element = document.querySelector('a')
-            let status = true
+        
             
-            status = element.hasAttributes();
+            let status = element.hasAttribute('class');
 
-            if (status == true) {
+            if (status === true) {
                 element.classList.add('blue');
             } else {
                 element.classList.add('red');
             }
+
+            console.log(status)
 
         };
     </script>
