@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form Checkbox</title>
+  <script>
+  window.onload = function() {
+        const form = document.querySelector('form')
+        form.onsubmit = (function(event){
+            event.preventDefault();
+            const checkMarks = document.querySelectorAll('input:checked');
+            const superheroes = []
+        
+            checkMarks.forEach(function(heroSelec) {
+                superheroes.push(heroSelec.value);
+            })
+            
+            if (superheroes.length == 1) {
+                alert(`The best superhero is: ${superheroes[0]}`);
+            } else if (superheroes.length > 1) {
+                alert(`The best superheroes are: ${superheroes.join(', ')}`);
+            } else {
+                alert('Please at least select a superhero');
+            }
+            
+        })
+  };
+
+                
+
+
+
+
+  </script>
+</head>
+<body>
+  <form action="save_user.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+    <input type="checkbox" name="superhero" value="Wolverine"> Wolverine
+    <input type="checkbox" name="superhero" value="The Invisible Woman"> The Invisible Woman
+    <input type="checkbox" name="superhero" value="Iron Man"> Iron Man
+    <input type="checkbox" name="superhero" value="Superman"> Superman
+    <input type="checkbox" name="superhero" value="Daredevil"> Daredevil
+    <input type="checkbox" name="superhero" value="The Flash"> The Flash
+    <input type="checkbox" name="superhero" value="Captain America"> Captain America
+    <input type="checkbox" name="superhero" value="Wonder Woman"> Wonder Woman
+    <input type="checkbox" name="superhero" value="Spider-Man"> Spider-Man
+    <input type="checkbox" name="superhero" value="Batman"> Batman
+    <input type="submit" name="submit" value="Submit" />
+  </form>
+</body>
+</html>

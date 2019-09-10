@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Properties</title>
+    <script>
+        window.onload = function () {
+                let form = document.querySelector('form');
+                let firstElement = form.elements[0];    //username
+                let secoundElement = form.elements[1];  //password
+                let thirdElement = form.elements[2];    //button
+                firstElement.value = 'morty';
+                secoundElement.value = '12345';
+
+                thirdElement.addEventListener('click', function () {
+                            alert(`username: ${firstElement.value} --- password: ${secoundElement.value}`)
+                })
+                        };
+    </script>
+</head>
+
+<body>
+    <form action="save_user.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+        <input type="text" id="username" name="username" />
+        <input type="password" id="pass" name="pass" />
+        <button>Show Username and Password</button>
+    </form>
+    <div></div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Properties</title>
+    <script>
+        window.onload = function () {
+            let form = document.querySelector('form');
+            let firstElement = form.elements[0];    //username
+            let secoundElement = form.elements[1];  //password
+            let thirdElement = form.elements[2];    //submit
+            firstElement.value = 'morty';
+            secoundElement.value = '12345';
+            form.onsubmit = (function(event){
+                event.preventDefault();
+
+                let div = document.querySelector('div');
+                div.innerText = "We did not go to save_user.html"
+                
+            })    
+            thirdElement.addEventListener('click', function () {
+                alert(`username: ${firstElement.value} --- password: ${secoundElement.value}`)
+                
+            })
+
+            
+        };
+    </script>
+</head>
+
+<body>
+    <form action="save_user.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+        <input type="text" id="username" name="username" />
+        <input type="password" id="pass" name="pass" />
+        <input type="submit" name="submit" value="Send" />
+    </form>
+    <div></div>
+</body>
+
+</html>
